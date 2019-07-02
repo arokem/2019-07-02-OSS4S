@@ -163,18 +163,18 @@
         <section>
                 <h3>The era of "brain observatories"</h3>
                 <div class="row">
-                        <div class="col-13 textcol">
-                            <img class="logo" src="img/aibs-logo.png" width="200" align="middle" alt="" border="0">
-                        </div>
-                        <div class="textcol col-23">
-                            <ul>
-                            <p>
-                                Allen Institute for Brain Science<br>
-                                <br>
-                            </p>
-                            </ul>
-                        </div>
-                        </div>
+                    <div class="col-13 textcol">
+                        <img class="logo" src="img/aibs-logo.png" width="200" align="middle" alt="" border="0">
+                    </div>
+                    <div class="textcol col-23">
+                        <ul>
+                        <p>
+                            Allen Institute for Brain Science<br>
+                            <br>
+                        </p>
+                        </ul>
+                    </div>
+                </div>
 
                 <div class="row fragment fade-in">
                     <div class="col-13 textcol">
@@ -350,125 +350,18 @@
         </section>
 
         <section>
-                <h2> Community-developed open-source software</h2>
-                <div class="row fragment" data-fragment-index="1">
-                <div class="imgcite two-col">
-                    <div style="position: absolute; left:2em; top:3em">
-                        <img src="img/nipy-logo.png"  align=middle height=200 width=200>
-                        <br>
-                        Neuroimaging in Python
-                        <p class="fragment">
-                        A community of practice
-                        <p class="fragment">
-                        Many different projects
-                        <br>
-                        <a href="nipy.org">http://nipy.org</a>
-                    </div>
+                <h4>Studying brain networks</h4>
+                <img src="./img/tract_groups.png" height="470">
+                <div class="cite" style="position: absolute; left:600px;">
+                    Image from <a href="https://www.ncbi.nlm.nih.gov/pubmed/16141282">Catani and ffytche (2015)</a>
                 </div>
-                <div class="imgcite two-col fragment">
-                    <img src="img/dipy-logo.png">
-                    Diffusion Imaging in Python
-                    <p class="fragment">
-                    Comprehensive
-                    <p class="fragment">
-                    Thoroughly tested
-                    <p class="fragment">
-                    Well-documented
-                    <br>
-                    <a href="dipy.org">http://dipy.org</a>
-                    <div class="cite" style="position: absolute; left:0px">
-                            <a href="https://www.frontiersin.org/articles/10.3389/fninf.2014.00008/full">Garyfallidis, Brett, Amirbekian, Rokem, van der Walt, Descoteaux, Nimmo Smith, and DIPY contributors (2014) Frontiers in Neuroinformatics</a>
-                    </div>
-                </div>
-            </div>
         </section>
 
-        <section>
-            <img src="./img/optic-radiation-postmortem.png" height="505" >
-        </section>
 
         <section>
             <h4>Diffusion MRI</h4>
             <video width="600" autoplay loop>
                 <source src="./img/dMRI-signal-movie.mp4">
-            </video>
-            <div style="position: absolute; left: 600px; top: 600px" >
-                <small><a href="http://jov.arvojournals.org/article.aspx?articleid=2603187">Rokem et al. (2017), Journal of Vision</a></small>
-                <br>
-                <small><a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0123272">Rokem et al. (2015), PLoS One</a></small>
-            </div>
-        </section>
-
-        <section>
-            <h4>Diffusion MRI</h4>
-            <div class = "fragment fade-in" style="position: absolute">
-                <canvas id="arrows-iso-horiz" width="1000" height="1000">
-                </canvas>
-                <script>
-                    context = document.getElementById('arrows-iso-horiz').getContext("2d");
-                    context.beginPath();
-                    canvas_arrow_two_heads(context, 390, 450, 590, 450);
-                    context.lineWidth = 2;
-                    context.stroke();
-                </script>
-            </div>
-            <div class = "fragment fade-in" style="position: absolute">
-                <canvas id="arrows-iso-vert" width="1000" height="1000">
-                </canvas>
-                <script>
-                    context = document.getElementById('arrows-iso-vert').getContext("2d");
-                    context.beginPath();
-                    canvas_arrow_two_heads(context, 250, 350, 250, 150);
-                    context.lineWidth = 2;
-                    context.stroke();
-                </script>
-            </div>
-
-            <div class="fragment" text-align: left>
-                Isotropic diffusion
-            </div>
-            <video width="600" autoplay loop>
-                <source src="./img/diffusion-isotropic.mp4">
-            </video>
-
-            <div style="position: absolute; left: 600px; top: 600px" >
-                <small><a href="http://jov.arvojournals.org/article.aspx?articleid=2603187">Rokem et al. (2017), Journal of Vision</a></small>
-                <br>
-                <small><a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0123272">Rokem et al. (2015), PLoS One</a></small>
-            </div>
-
-        </section>
-
-        <section>
-            <h4>Diffusion MRI</h4>
-            <div class = "fragment fade-in" style="position: absolute">
-                <canvas id="arrows-aniso-vert" width="1000" height="1000">
-                </canvas>
-                <script>
-                    context = document.getElementById('arrows-aniso-vert').getContext("2d");
-                    context.beginPath();
-                    canvas_arrow_two_heads(context, 250, 325, 250, 175);
-                    context.lineWidth = 2;
-                    context.stroke();
-                </script>
-            </div>
-            <div class = "fragment fade-in" style="position: absolute">
-                <canvas id="arrows-aniso-horiz" width="1000" height="1000">
-                </canvas>
-                <script>
-                    context = document.getElementById('arrows-aniso-horiz').getContext("2d");
-                    context.beginPath();
-                    canvas_arrow_two_heads(context, 370, 400, 610, 400);
-                    context.lineWidth = 2;
-                    context.stroke();
-                </script>
-            </div>
-
-            <div class="fragment" text-align:left;>
-                Anisotropic diffusion
-            </div>
-            <video width="600" autoplay loop>
-                <source src="./img/diffusion-anisotropic.mp4">
             </video>
             <div style="position: absolute; left: 600px; top: 600px" >
                 <small><a href="http://jov.arvojournals.org/article.aspx?articleid=2603187">Rokem et al. (2017), Journal of Vision</a></small>
@@ -537,21 +430,48 @@
         </section>
 
         <section>
-            <h2> Open source diffusion MRI</h2>
-            <img src="img/dipy-logo.png">
-            <br>
-            Comprehensive
-            <br>
-            Thoroughly tested
-            <br>
-            Well-documented
-            <br>
-            <br>
-            <img src="img/eleftherios.jpg" height="200">
-            <br>
-            Eleftherios Garyfallidis (Indiana University)
-            <div class="cite" style="font-size:14px">
-                <a href="https://www.frontiersin.org/articles/10.3389/fninf.2014.00008/full">Garyfallidis, Brett, Amirbekian, Rokem, van der Walt, Descoteaux, Nimmo Smith, and DIPY contributors (2014) <br> Frontiers in Neuroinformatics</a>
+                <img src="img/classification_probs.png" height=400>
+        </section>
+
+        <section>
+            <img src="img/nature-toolbox.png">
+        </section>
+
+        <section>
+
+        </section>
+
+        <section>
+                <h2> Community-developed open-source software</h2>
+                <div class="row fragment" data-fragment-index="1">
+                <div class="imgcite two-col">
+                    <div style="position: absolute; left:2em; top:3em">
+                        <img src="img/nipy-logo.png"  align=middle height=200 width=200>
+                        <br>
+                        Neuroimaging in Python
+                        <p class="fragment">
+                        A community of practice
+                        <p class="fragment">
+                        Many different projects
+                        <br>
+                        <a href="nipy.org">http://nipy.org</a>
+                    </div>
+                </div>
+                <div class="imgcite two-col fragment">
+                    <img src="img/dipy-logo.png">
+                    Diffusion Imaging in Python
+                    <p class="fragment">
+                    Comprehensive
+                    <p class="fragment">
+                    Thoroughly tested
+                    <p class="fragment">
+                    Well-documented
+                    <br>
+                    <a href="dipy.org">http://dipy.org</a>
+                    <div class="cite" style="position: absolute; left:0px">
+                            <a href="https://www.frontiersin.org/articles/10.3389/fninf.2014.00008/full">Garyfallidis, Brett, Amirbekian, Rokem, van der Walt, Descoteaux, Nimmo Smith, and DIPY contributors (2014) Frontiers in Neuroinformatics</a>
+                    </div>
+                </div>
             </div>
         </section>
 
